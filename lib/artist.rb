@@ -28,8 +28,10 @@ class Artist
     result = []
     Song.all.each do |song|
       result.push(song.name)
+
     end
-    end
+    result
+    binding.pry
   end
   
 end
