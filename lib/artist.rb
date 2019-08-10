@@ -31,6 +31,7 @@ class Artist
 
     end
     result
+    result.length
     binding.pry
   end
   
