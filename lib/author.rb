@@ -20,6 +20,8 @@ class Author
   def self.post_count
     result = []
     Post.all.each do |post|
-      result.push(post.name)
+      result.push(post.title)
+    end
+    result.length
   end
 end
