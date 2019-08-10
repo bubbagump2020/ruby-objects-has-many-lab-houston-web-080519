@@ -17,5 +17,9 @@ class Author
     Post.all.select {|post| post.author == self}
   end
   
-  def self.
+  def self.post_count
+    result = []
+    Post.all.each do |post|
+      result.push(post.name)
+  end
 end
