@@ -25,8 +25,10 @@ class Artist
   
   
   def self.song_count
+    result = []
     Song.all.each do |song|
-      binding.pry
+      result.push(song.name)
+    end
     end
   end
   
